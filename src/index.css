@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Init font face */
+
+@font-face {
+    font-family: "promptLight";
+    src: url(./assets/font/Prompt-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "promptSemiBold";
+    src: url(./assets/font/Prompt-SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "promptBold";
+    src: url(./assets/font/Prompt-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    animation: open .8s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+
+/* Animation */
+
+@keyframes open{
+    from{
+        opacity: 0;
+        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    }
+    to{
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes float {
+	0% {transform: rotate(0) translate(-50%,-50%) ;}
+	50% {transform: rotate(20deg) translate(-50%,-50%);}
+	100% {transform: rotate(0) translate(-50%,-50%);}
+}
+
+.floating{
+    animation: float 30s infinite;
+}
+
+.highlight-text{
+    color: #AE92FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.retro-text{
+    text-shadow: 4px 4px #7251CE;
+}
+
+.retro-text:hover{
+    text-shadow: 0 0 transparent;
+}
+
+.custom-line-clamp{
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+
+/* Viewport Smartphone Device */
+
+@media screen and (min-width:320px) {
+    .floating{
+        width: 500px;
+    }
+    
+    .clip-rectangle{
+        transition: 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+
+    input[id="mobile-nav-toggle"]:checked + .clip-rectangle {
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}
+
+
+/* Viewport Tablet Device */
+
+@media screen and (min-width:641px) {
+    .clip-rectangle{
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}
+
+
+/* Viewport Laptop Device */
+
+@media screen and (min-width:1080px) {
+    .floating{
+        width: 900px;
+    }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Yardan Aqiella</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                'sm': '641px',
+                'md': '1080px'
+            },
+            colors: {
+                "soft-gray": "rgba(226,232,240,.05)",
+                "bgdark": "#1B1B3C",
+                "title": "#CCD6F6",
+                "subtitle": "#8892B0",
+                "primary": "#7251CE",
+                "light-purple": "#AE92FF"
+            },
+            fontFamily: {
+                "promptLight": ["promptLight", "sans-serif"],
+                "promptSemiBold": ["promptSemiBold", "sans-serif"],
+                "promptBold": ["promptBold", "sans-serif"]
+            },
+          }
+        }
+      </script>
+</head>
+<body class="bg-bgdark">
+
+    <!-- Header Area -->
+
+    <header class="flex w-full sticky bg-[rgba(27,27,60,.7)] top-0 z-[99] backdrop-blur-[10px] border-b border-soft-gray px-[25px] py-5 sm:px-[50px] sm:py-[30px] md:px-[100px] md:py-[25px]">
+        <!-- Container -->
+        <div class="w-full mx-auto flex items-center relative max-w[500px] sm:max-w-[800px] md:max-w-[1200px]">
+            <a href="./index.html" class="group brand-logo block transition duration-300 w-[40px] h-[40px] md:w-[50px] md:h-[50px]">
+                <img src="./assets/img/yd.svg" alt="yd-logo" class="group-hover:opacity-70">
+            </a>
+            <label for="mobile-nav-toggle" class="absolute right-0 transition duration-300 hover:opacity-30 sm:hidden">
+                <img src="./assets/img/align-right.svg" alt="toggle icon" class="block w-[30px] h-[30px]">
+            </label>
+            <input type="checkbox" id="mobile-nav-toggle" class="hidden peer">
+            <nav class="flex flex-col items-start font-promptSemiBold invisible opacity-0 fixed top-[100px] right-[25px] bg-bgdark border-2 border-primary py-[15px] pr-[80px] pl-[20px] clip-rectangle peer-checked:visible peer-checked:opacity-100 sm:visible sm:opacity-100 sm:static sm:bg-[rgba(0,0,0,0)] sm:flex-row sm:items-center sm:ml-[20px] sm:p-0 sm:border-0 md:ml-[45px]">
+                <a href="#about" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">About Me</a>
+                <a href="#skills" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Skills</a>
+                <a href="#portfolio" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] mb-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Portfolio</a>
+                <a href="#contact" class="text-subtitle decoration-0 transition duration-300 ease-in-out hover:text-light-purple text-[15px] sm:mb-0 sm:py-0 sm:px-[14px] md:text-[16px] md:py-0 md:px-[18px]">Contact</a>
+            </nav>
+            <div class="flex justify-between items-center ml-auto mr-[50px] min-w-[80px] sm:min-w[80px] sm:mr-0 md:min-w-[90px]">
+                <a href="https://github.com/morphiezy" target="_blank" class="block md:w-[32px] md:h-[32px]">
+                    <img src="./assets/img/github.svg" alt="github" class="w-[30px] h-[30px] transition duration-300 hover:opacity-60">
+                </a>
+                <a href="https://www.linkedin.com/in/m-yardan-aqiella" target="_blank" class="block md:w-[32px] md:h-[32px]">
+                    <img src="./assets/img/linkedin.svg" alt="linkedin" class="w-[30px] h-[30px] transition duration-300 hover:opacity-60">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+
+    <main class="py-0 px-[25px] mx-0 my-[40px] sm:px-[50px] sm:my-[70px] md:px-[100px] md:my-[80px]">
+
+        <!-- Hero Section -->
+
+        <section class="w-full mx-auto max-w[500px] sm:max-w-[800px] md:max-w-[1200px]">
+            <h1 class="text-[30px] leading-10 font-promptBold text-title sm:text-[45px] sm:leading-[55px] md:text-[65px] md:leading-[85px]">M Yardan Aqiella.</h1>
+            <h1 class="text-[30px] leading-10 font-promptBold text-title opacity-60 mt-[10px] sm:text-[45px] sm:leading-[55px] sm:mt-[15px] md:text-[65px] md:leading-[85px] md:mt-0">I Enjoying Build Anything.</h1>
+            <p class="font-promptLight text-subtitle mt-[20px] leading-7 text-[15px] sm:mt-7 sm:leading-7 sm:text-[16px] md:mt-[30px] md:max-w-[700px] md:leading-8">Junior Frontend Developer specializing in website with one year experience building responsive website application using HTML CSS Javascript and other modern libraries & frameworks to provide user experience through efficient website development and considering <span class="highlight-text">good website performance.</span></p>
+            <div class="flex flex-wrap items-center mt-[45px] sm:mt-[50px] md:mt-[60px]">
+                <button class="group rounded-[5px] transition duration-300 cursor-pointer bg-primary border border-transparent hover:border-primary hover:bg-[rgba(114,81,206,.15)] py-4 px-8 w-full mb-5 sm:w-auto sm:mr-[30px] sm:my-0 md:mr-10">
+                    <a href="./assets/file/cv.pdf" class="no-underline text-title font-promptSemiBold transition duration-300 group-hover:text-primary text-[15px] sm:text-[16px]">Download Resume</a>
+                </button>
+                <button class="rounded-[5px] transition duration-300 cursor-pointer border border-primary bg-bgdark hover:bg-[rgba(114,81,206,.15)] py-4 px-8 w-full sm:w-auto">
+                    <a href="mailto:myardan.aqiella22@gmail.com" class="no-underline text-primary font-promptSemiBold transition duration-300 text-[15px] sm:text-[16px]">Contact Me</a>
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+
+        <section class="w-full mt-[180px] mx-auto max-w[500px] sm:max-w-[800px] md:max-w-[1200px]" id="about">
+            <h1 class="font-promptBold transition-all duration-300 text-center text-[32px] text-title retro-text sm:text-[40px] md:text-[50px]">
+                <span class="highlight-text"># </span>About Me
+            </h1>
+            <div class="flex flex-wrap flex-col-reverse items-center mt-[50px] sm:flex-row sm:items-start sm:justify-between sm:mt-[60px] md:max-w-[1000px] md:w-full md:mx-auto md:items-center">
+                <div class="mt-[50px] sm:max-w-full sm:w-[60%] sm:mt-0">
+                    <p class="mb-[20px] font-promptLight text-subtitle leading-7 text-[15px] sm:leading-7 sm:text-[16px] md:leading-8 md:mb-[25px]">My name is M Yardan Aqiella, final year student at Dinamika Bangsa University. I really <span class="highlight-text">like everything related to technology</span> , my interest in programming world started since I was in junior high school when I observed how an e-commerce site can work in displaying the goods they sell. Starting from curiosity that's where I started to learn html and css for the first time.</p>
+                    <p class="mb-[20px] font-promptLight text-subtitle leading-7 text-[15px] sm:leading-7 sm:text-[16px] md:leading-8 md:mb-[25px]">My memorable experience was being able to be a Frontend Engineer student for 6 months at a technology company namely <a href="https://academy.alterra.id/" class="highlight-text" target="_blank">Alterra Academy</a> and now I am a Frontend Engineer student at <a href="https://www.ruangguru.com" class="highlight-text" target="_blank">Ruangguru</a> to continue my frontend studies.</p>
+                    <p class="mb-[20px] font-promptLight text-subtitle leading-7 text-[15px] sm:leading-7 sm:text-[16px] md:leading-8 md:mb-[25px]">Over time, I have gained a lot of knowledge and many technologies that I mastered to build a website application by applying the concept of <span class="highlight-text">clean code</span>, as well as <span class="highlight-text">maintaining the performance and quality</span> of a website.</p>
+                </div>
+                <div class="sm:flex sm:justify-end sm:w-[40%] sm:pl-10 md:block md:w-auto md:p-0">
+                    <div class="relative bg-[#1F1F45] cursor-pointer rounded-[5px] after:content-[''] after:absolute after:w-full after:h-full after:border-2 after:border-primary after:rounded-[5px] after:z-[-1] after:transition-all after:duration-300 after:ease-[cubic-bezier(0.39, 0.575, 0.565, 1)] w-[250px] h-[300px] after:left-[15px] after:top-[15px] hover:after:left-[10px] hover:after:top-[10px] sm:min-w-[200px] sm:max-w-[250px] md:max-w-[300px] md:w-[300px] md:h-[350px]">
+                        <img src="./assets/img/ydn.png" alt="yardan" class="w-full h-full object-cover object-top grayscale transition duration-300 ease-[ cubic-bezier(0.39, 0.575, 0.565, 1)] rounded-[5px] hover:grayscale-0">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Section -->
+
+        <section class="w-full mt-[180px] mx-auto max-w[500px] sm:max-w-[800px] md:max-w-[1200px] md:relative md:mt-[200px]" id="skills">
+            <h1 class="font-promptBold transition-all duration-300 text-center text-[32px] text-title retro-text sm:text-[40px] md:text-[50px]"><code>{</code> Skills <code>}</code></h1>
+            <p class="text-center font-promptLight text-subtitle text-[15px] mt-[10px] sm:text-[16px]">Technology Skills in Frontend Development</p>
+            <div class="w-full grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] auto-rows-[75px] gap-[20px] mt-[40px] sm:mt-[60px] sm:auto-rows-[80px] md:grid-cols-[repeat(auto-fit,minmax(255px,1fr))] md:grid-rows-[repeat(4,80px)]">
+                <div class="skill-item flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/html.svg" alt="html" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">HTML</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Advanced</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/css.svg" alt="css" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">CSS</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Advanced</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/js.png" alt="javascript" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">Javascript</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Advanced</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/react.svg" alt="react" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">React JS</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Intermediate</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/redux.png" alt="redux" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">Redux</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Intermediate</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/node-js.svg" alt="node-js" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">Node JS</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Intermediate</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/bootstrap.png" alt="Bootstrap" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">Bootstrap</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Advanced</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/tailwind.png" alt="Tailwind" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">Tailwind CSS</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Intermediate</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/graphql.png" alt="graphql" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">GraphQL</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Intermediate</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/git.svg" alt="git" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">Git</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Intermediate</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/github-icon.svg" alt="github" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">Github</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Intermediate</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgba(31,31,69,.4)] border border-soft-gray rounded-[5px] transition-all duration-300 cursor-pointer hover:bg-[rgba(31,31,69,1)] hover:border-primary px-[15px] py-[20px] md:px-[20px] md:py-0">
+                    <div class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]">
+                        <img src="./assets/img/figma.png" alt="figma" class="w-full h-full">
+                    </div>
+                    <div class="pl-[15px]">
+                        <p class="font-promptSemiBold text-title text-[16px] sm:text-[18px]">Figma</p>
+                        <p class="font-promptLight text-subtitle text-[13px] sm:text-[14px]">Intermediate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+
+        <section class="w-full mt-[180px] mx-auto max-w[500px] sm:max-w-[800px] md:max-w-[1200px] md:relative md:mt-[200px]" id="portfolio">
+            <h1 class="font-promptBold transition-all duration-300 text-center text-[32px] text-title retro-text sm:text-[40px] md:text-[50px]"><code>+</code> Portfolio <code>+</code></h1>
+            <div class="grid grid-cols-[repeat(auto-fit,1fr)] grid-rows-[repeat(4,350px)] gap-[40px] mt-10 sm:grid-cols-[repeat(auto-fit,minmax(360px,1fr))] sm:auto-rows-[350px] sm:grid-rows-none sm:mt-[50px] sm:gap-[30px] md:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] md:grid-rows-[repeat(2,380px)] md:mt-[60px]">
+                <a href="https://capstone-study-space.netlify.app" class="relative bg-[rgba(31,31,69,1)] transition-all duration-300 no-underline overflow-hidden border border-[rgba(114,81,206,.2)] hover:border-light-purple group md:bg-[rgb(31, 31, 69,.5)]" target="_blank">
+                    <img src="./assets/img/study-space.png" alt="study-space" class="w-full h-full object-cover opacity-[0.5]">
+                    <div class="flex absolute inset-0 bg-[rgba(31,31,69,.95)] group-hover:bg-[rgba(31,31,69,1)] flex-col transition-all duration-300 ease-[cubic-bezier(0.47,0,0.745,0.715)] p-[30px] md:p-10">
+                        <p class="font-promptSemiBold text-light-purple text-[14px]"><code>Frontend Project</code></p>
+                        <h2 class="font-promptSemiBold text-title text-[24px] mt-[5px] md:text-[30px]">Study Space</h2>
+                        <p class="text-subtitle w-full overflow-hidden custom-line-clamp text-[16px] leading-[25px] mt-[30px] md:text-[15px] font-promptLight">Study Space is a <span class="highlight-text">learning management system</span> application that allows us to receive learning materials online in an encapsulated classroom between teachers and students.</p>
+                        <div class="flex flex-wrap font-promptSemiBold text-title mt-[30px] text-[14px] md:text-[15px]">
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>HTML</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>CSS</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Javascript</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>React JS</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Tailwind CSS</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>GraphQL</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Apollo Client</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>JWT Token</code></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://resepku-react.netlify.app" class="relative bg-[rgba(31,31,69,1)] transition-all duration-300 no-underline overflow-hidden border border-[rgba(114,81,206,.2)] hover:border-light-purple group md:bg-[rgb(31, 31, 69,.5)]" target="_blank">
+                    <img src="./assets/img/resepku.png" alt="resepku" class="w-full h-full object-cover opacity-[0.5]">
+                    <div class="flex absolute inset-0 bg-[rgba(31,31,69,.95)] group-hover:bg-[rgba(31,31,69,1)] flex-col transition-all duration-300 ease-[cubic-bezier(0.47,0,0.745,0.715)] p-[30px] md:p-10">
+                        <p class="font-promptSemiBold text-light-purple text-[14px]"><code>Frontend Project</code></p>
+                        <h2 class="font-promptSemiBold text-title text-[24px] mt-[5px] md:text-[30px]">Resepku</h2>
+                        <p class="text-subtitle w-full overflow-hidden custom-line-clamp text-[16px] leading-[25px] mt-[30px] md:text-[15px] font-promptLight">Resepku is a <span class="highlight-text">recipe website</span> that provides various kinds of selected food and beverage recipe creations, besides that we can also save and publish our recipe creations.</p>
+                        <div class="flex flex-wrap font-promptSemiBold text-title mt-[30px] text-[14px] md:text-[15px]">
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>HTML</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>CSS</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Javascript</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>React JS</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Bootstrap</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>GraphQL</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Hasura</code></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://hi-lecturer.surge.sh" class="relative bg-[rgba(31,31,69,1)] transition-all duration-300 no-underline overflow-hidden border border-[rgba(114,81,206,.2)] hover:border-light-purple group md:bg-[rgb(31, 31, 69,.5)]" target="_blank">
+                    <img src="./assets/img/hi-lecturer.png" alt="hi-lecturer" class="w-full h-full object-cover opacity-[0.5]">
+                    <div class="flex absolute inset-0 bg-[rgba(31,31,69,.95)] group-hover:bg-[rgba(31,31,69,1)] flex-col transition-all duration-300 ease-[cubic-bezier(0.47,0,0.745,0.715)] p-[30px] md:p-10">
+                        <p class="font-promptSemiBold text-light-purple text-[14px]"><code>Frontend Project</code></p>
+                        <h2 class="font-promptSemiBold text-title text-[24px] mt-[5px] md:text-[30px]">Hi-Lecturer</h2>
+                        <p class="text-subtitle w-full overflow-hidden custom-line-clamp text-[16px] leading-[25px] mt-[30px] md:text-[15px] font-promptLight">Hi Lecturer is a website application that serves to create polite message templates that can be used when you want to start a conversation with our lecturers</p>
+                        <div class="flex flex-wrap font-promptSemiBold text-title mt-[30px] text-[14px] md:text-[15px]">
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>HTML</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>CSS</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Javascript</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>React JS</code></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://schedly.surge.sh" class="relative bg-[rgba(31,31,69,1)] transition-all duration-300 no-underline overflow-hidden border border-[rgba(114,81,206,.2)] hover:border-light-purple group md:bg-[rgb(31, 31, 69,.5)]" target="_blank">
+                    <img src="./assets/img/schedly.png" alt="schedly" class="w-full h-full object-cover opacity-[0.5]">
+                    <div class="flex absolute inset-0 bg-[rgba(31,31,69,.95)] group-hover:bg-[rgba(31,31,69,1)] flex-col transition-all duration-300 ease-[cubic-bezier(0.47,0,0.745,0.715)] p-[30px] md:p-10">
+                        <p class="font-promptSemiBold text-light-purple text-[14px]"><code>Frontend Project</code></p>
+                        <h2 class="font-promptSemiBold text-title text-[24px] mt-[5px] md:text-[30px]">Schedly</h2>
+                        <p class="text-subtitle w-full overflow-hidden custom-line-clamp text-[16px] leading-[25px] mt-[30px] md:text-[15px] font-promptLight">Schedly is a todo app that allows us to record what activities we want to do in the future, this is my first implementation after learning react js</p>
+                        <div class="flex flex-wrap font-promptSemiBold text-title mt-[30px] text-[14px] md:text-[15px]">
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>HTML</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>CSS</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Javascript</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>React JS</code></p>
+                            <p class="mt-0 mr-[10px] mb-[10px] ml-0"><code>Redux Toolkit</code></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-section w-full mt-[180px] mx-auto max-w[500px] sm:max-w-[800px] md:max-w-[1200px] md:relative md:mt-[200px]" id="contact">
+            <h1 class="font-promptBold transition-all duration-300 text-center text-[32px] text-title retro-text sm:text-[40px] md:text-[50px]"><code></code> Contact <code>!</code></h1>
+            <p class="text-center font-promptLight text-subtitle text-[15px] mt-[10px] sm:text-[16px] md:max-w-[600px] md:mx-auto">Currently looking for an opportunity to work with a website project. Please send me a message if interested, i'll do my best for you.</p>
+            <form class="block w-full mt-10 mx-auto mb-0 md:max-w-[800px] md:mt-[60px]">
+                <input type="email" placeholder="example@email.com" name="email" class="block w-full text-title outline-none rounded-[10px] transition-all duration-300 cursor-pointer bg-[rgba(31,31,69,.8)] border border-soft-gray font-promptLight placeholder:text-subtitle focus:border-primary focus:bg-[rgba(31,31,69,.2)] p-[20px] text-base mt-[15px] mx-auto mb-0 md:mt-[20px]">
+                <input type="text" placeholder="Hiring Frontend Engineer" name="subject" class="block w-full text-title outline-none rounded-[10px] transition-all duration-300 cursor-pointer bg-[rgba(31,31,69,.8)] border border-soft-gray font-promptLight placeholder:text-subtitle focus:border-primary focus:bg-[rgba(31,31,69,.2)] p-[20px] text-base mt-[15px] mx-auto mb-0 md:mt-[20px]">
+                <textarea name="message" rows="6" placeholder="Enter your message here" class="block w-full text-title outline-none rounded-[10px] transition-all duration-300 cursor-pointer bg-[rgba(31,31,69,.8)] border border-soft-gray font-promptLight placeholder:text-subtitle focus:border-primary focus:bg-[rgba(31,31,69,.2)] p-[20px] text-base mt-[15px] mx-auto mb-0 md:mt-[20px]"></textarea>
+                <input type="submit" value="Send Message" class="block w-full text-title outline-none rounded-[10px] transition-all duration-300 cursor-pointer bg-primary border border-primary font-promptSemiBold hover:bg-[rgba(114,81,206,0.15)] p-[20px] mt-[30px] md:mt-[40px]">
+            </form>
+        </section>
+    </main>
+
+    <div class="floating fixed blur-[25px] top-1/2 left-2/4 z-[-1] translate-x-[-50%] translate-y-[-50%] opacity-[0.15]">
+        <img src="./assets/img/animation.png" alt="animation" draggable="false" class="w-full h-full">
+    </div>
+
+    <footer class="w-full mt-[100px] px-0 py-[50px] text-center opacity-[0.5]">
+        <p class="font-promptLight text-subtitle text-sm">
+            <code>Created with 💜 by <a href="https://github.com/morphiezy" class="highlight-text">M Yardan Aqiella</a></code>
+        </p>
+        <p class="font-promptLight text-subtitle text-sm mt-2">
+            <code>Copyright 2022</code>
+        </p>
+    </footer>
+
+</body>
+</html>
